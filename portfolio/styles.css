@@ -1,7 +1,13 @@
 *{
     margin: 0;
     padding: 0;
+    
+    
+
 }
+
+
+    
 
 header{
     width: 100vw;
@@ -10,6 +16,7 @@ header{
     border-bottom: 2px solid rgb(39, 39, 42);
     position: fixed;
     z-index: 2;
+    
 
 }
 
@@ -22,6 +29,7 @@ header{
 .nav-link{
     margin: 1em 2em 1em 1em;
     text-decoration: none;
+    color: white;
 }
 .nav-link:visited{
     color: white;
@@ -38,18 +46,22 @@ header{
         rgb(12, 60, 60)100%
     );
     
+    
 }
 
 #titulo-presenta{
     padding-top:40vh;
-    text-align: center;
-    font-size: 4em;
+    font-size: 3em;
     color: white;
+    display: flex;
+    justify-content: center;
+    
 }
 #estu{
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: rgb(190, 46, 52);
-    font-size: 2em;
+    font-size: 1em;
 }
 
 /*             proyectos              */
@@ -62,7 +74,7 @@ header{
     width: 100%;
     height: 100vh;
 }
-.project-title{
+.project-tile{
     text-align: center;
     padding-top: 8%;
     font-size: 2.5em;
@@ -87,10 +99,10 @@ header{
 	
 }
 #seccion img {
-	width: 0;
+    width: 0;
 	flex-grow: 1;
 	object-fit:cover;
-	transition: .5s ease;
+	transition: .7s ease;
 
 }
 
@@ -123,6 +135,7 @@ header{
         rgb(12, 60, 60)100%
     );
     height: 100vh;
+
 }
 #titulo-contacto{
     color: white;
@@ -147,6 +160,7 @@ header{
     text-decoration: none;
     margin: 4em 4em 1em 2em ;
     font-size: 1.5em;
+    transition: all .5s ease;
     
 }
 .contactar:visited{
@@ -154,8 +168,9 @@ header{
 }
 .contactar:hover{
     color: white;
-    transform: translateY(2vh);
-    transition-duration: 300ms;
+    transform: translateY(2.5vh);
+    
+    
     
 }
 #centrado{
@@ -182,14 +197,9 @@ header{
     text-align: center;
     margin-top: 12vh;
 }
-#boton{
-    width: 8vw;
-    position: absolute;
-    left: 46%;
-    top: 130vw;
+
     
-    
-}
+
 .hiper{
     font-weight: 900;
 }
@@ -207,8 +217,21 @@ i{
     transition-duration: 500ms;
 }
 
+footer{
+    background-color: transparent;
+}
 
+@media (max-width: 768px) {
+    /* Agrega estilos específicos para pantallas más pequeñas aquí */
 
+    header {
+        height: 3em; /* Por ejemplo, reduce la altura del encabezado */
+    }
+}
 
-
-
+@media (max-width: 768px) {
+    /* Agregar un espacio en blanco en la parte inferior de la página para evitar que se alargue en exceso */
+    body {
+        padding-bottom: 60px; /* Ajusta el valor según tus necesidades */
+    }
+}
