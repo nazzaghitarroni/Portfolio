@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100vw;
+    height: 4em;
+    background-color: rgb(190, 49, 68);
+    border-bottom: 2px solid rgb(39, 39, 42);
+    position: fixed;
+    z-index: 2;
+
+}
+
+#navbar{
+    display: flex;
+    justify-content: right;
+    font-size: 1.3em;
+    
+}
+.nav-link{
+    margin: 1em 2em 1em 1em;
+    text-decoration: none;
+}
+.nav-link:visited{
+    color: white;
+}
+
+/*             welcome              */
+
+
+#welcome-section{
+    height: 100vh;
+    background: linear-gradient(
+        -90deg,
+        rgb(39, 39, 42) 20%,
+        rgb(12, 60, 60)100%
+    );
+    
+}
+
+#titulo-presenta{
+    padding-top:40vh;
+    text-align: center;
+    font-size: 4em;
+    color: white;
+}
+#estu{
+    text-align: center;
+    color: rgb(190, 46, 52);
+    font-size: 2em;
+}
+
+/*             proyectos              */
+#projects{
+    background: linear-gradient(
+        -90deg,
+        rgb(39, 39, 42) 20%,
+        rgb(12, 60, 60)100%
+    );
+    width: 100%;
+    height: 100vh;
+}
+.project-title{
+    text-align: center;
+    padding-top: 8%;
+    font-size: 2.5em;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+#subrayado{
+    width: 25%;
+    margin: auto;
+}
+#sd{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+}
+#seccion{
+	display:flex;
+	width: 80vw;
+	height:60vh;
+	margin-top: 5%;
+	
+}
+#seccion img {
+	width: 0;
+	flex-grow: 1;
+	object-fit:cover;
+	transition: .5s ease;
+
+}
+
+
+#seccion img:hover{
+	cursor:auto;
+	width: 300px;
+	opacity: 1;
+	filter: contrast(110%) brightness(110%);
+
+}
+.sepa.arriba{
+    border:1px solid black;
+    width: 100%;
+    position: absolute;
+    top: 129vh;
+}
+.sepa.abajo{
+    border:1px solid black;
+    width: 100%;
+    position: absolute;
+    top: 199vh;
+}
+/*             contacto              */
+
+#contactacion{
+    background: linear-gradient(
+        -90deg,
+        rgb(39, 39, 42) 20%,
+        rgb(12, 60, 60)100%
+    );
+    height: 100vh;
+}
+#titulo-contacto{
+    color: white;
+    text-align: center;
+    padding-top: 15vw;
+    font-size: 3.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#texto-contacto{
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    margin-top: 0.5em;
+}
+#barra-contacto{
+    color: white;
+    display: flex;
+    justify-content: center;
+    
+}
+.contactar{
+    text-decoration: none;
+    margin: 4em 4em 1em 2em ;
+    font-size: 1.5em;
+    
+}
+.contactar:visited{
+    color: white;
+}
+.contactar:hover{
+    color: white;
+    transform: translateY(2vh);
+    transition-duration: 300ms;
+    
+}
+#centrado{
+    text-align: center;
+}
+#estu{
+    
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: escribir 3s linear infinite;
+    display: inline-block;
+    font-size: 24px;
+}
+
+@keyframes escribir {
+    to {
+        width: 100%;
+    }
+}
+
+#titulo-cv{
+    color: white;
+    text-align: center;
+    margin-top: 12vh;
+}
+#boton{
+    width: 8vw;
+    position: absolute;
+    left: 46%;
+    top: 130vw;
+    
+    
+}
+.hiper{
+    font-weight: 900;
+}
+
+i{
+    padding: 0 10px 0 1px;
+}
+
+#desca:visited{
+    color: white;
+}
+#desca:hover{
+    color:darkgoldenrod;
+    
+    transition-duration: 500ms;
+}
+
+
+
+
+
+
