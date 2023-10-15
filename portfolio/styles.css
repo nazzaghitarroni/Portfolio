@@ -161,6 +161,7 @@ header{
     margin: 4em 4em 1em 2em ;
     font-size: 1.5em;
     transition: all .5s ease;
+    color: white;
     
 }
 .contactar:visited{
@@ -216,6 +217,7 @@ i{
     
     transition-duration: 500ms;
 }
+
 
 footer{
     background-color: transparent;
